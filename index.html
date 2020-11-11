@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .cover {
+        border: 2px solid lightsalmon;
+        margin: 0 auto;
+        width: 50%;
+        padding: 10px;
+    }
+
+    .cover * {
+        border: 1px solid lightseagreen;
+        padding: 10px;
+    }
+
+    .cover li {
+        list-style: none;
+    }
+
+    #tombol {
+        margin: 0 auto;
+    }
+
+    .skyblue {
+        background-color: skyblue;
+    }
+</style>
+<body>
+    <div class="cover">
+        <h1 id="judul">Judul</h1>
+        <div class="container">
+            <ul>
+                <li class="li">baris1</li>
+                <li class="li">baris2</li>
+                <li class="li">baris3</li>
+                <li class="li">baris4</li>
+            </ul>
+        </div>
+        <div class="pendaftar">
+            <h1>Nama pendaftar</h1>
+        </div>
+    </div>
+    <button id="tombol">
+        Buat baris baru!
+    </button>
+    <button id="ubah-warna">
+        ubah warna baris
+    </button>
+    <button id="reload">
+        refresh page
+    </button>
+    <script>
+        // const judul = document.getElementById('judul');
+        // judul.style.color = 'red';
+        // judul.style.backgroundColor = 'limegreen'; 
+        // judul.innerHTML = 'Bermain bola';
+
+        // const li = document.getElementsByTagName('li');
+        // for( let i = 0; i <= li.length; i++){
+        //     li[i].style.backgroundColor = 'yellow'; 
+        // }
+
+        // const container = document.getElementsByClassName('container'); 
+        // container[0].style.backgroundColor = 'yellow';
+        
+        // const li1 = document.querySelector('#judul');
+        // li1.style.color = 'limegreen';
+
+        // const li = document.querySelectorAll('.li');
+        // for(var i = 0; i <= li.length; i++) {
+        //     li[i].style.color = 'green';
+        //     li[i].style.fontWeight = 'bold';
+
+        // }
+
+        const tombol = document.getElementById('tombol');
+        tombol.style.color = 'red';
+        tombol.style.padding = '10px';
+        tombol.style.borderRadius = '5px';
+        tombol.style.cursor = 'pointer';
+        
+        const judul = document.getElementById('judul');
+        tombol.addEventListener('click', function() {
+            const barisBaru = document.createElement('li');
+            const isiBaris = document.createTextNode('Baris baru');
+
+            barisBaru.appendChild(isiBaris);
+
+            const ul = document.getElementsByTagName('ul');
+            ul[0].appendChild(barisBaru);
+            alert('baris baru sudah ditambahlan!')
+        });
+
+        const ubah_warna = document.getElementById('ubah-warna');
+        ubah_warna.style.padding = '10px';
+        ubah_warna.style.cursor = 'pointer';
+
+        ubah_warna.addEventListener('click', function(){
+            const li = document.getElementsByTagName('li');
+            var yakin = confirm('yakin mau diubah?');
+            if( yakin === true) {
+                for( let i = 0 ; i <= li.length; i ++){
+                    li[i].classList.toggle('skyblue')
+                }
+            } 
+        });
+
+        const tReload = document.querySelector('#reload');
+        tReload.style.padding = '20px';
+        tReload.style.backgroundColor = 'purple';
+
+        tReload.addEventListener('click', function() {
+            location.reload();
+        })
+
+
+    </script>
+    <script src="program.js"></script>
+</body>
+</html>

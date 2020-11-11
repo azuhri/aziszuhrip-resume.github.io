@@ -1,0 +1,466 @@
+/* fonts */
+    /* montserat */
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+    /* Poopins */
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+    /* Quicksand */
+    @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 15px;
+    font-family: 'Poppins', 'sans-serif';
+}
+
+/* Header */
+header{
+    width: 100%;
+    /* border: 0.1rem solid red; */
+    display: flex;
+    padding: 3.5rem 0;
+    position: fixed;
+    z-index: 99999999;
+    background-color: white;
+}
+
+header div {
+    flex-basis: 50%;
+}
+
+.profil-name {
+    /* border: 1px solid purple; */
+    margin-left: 3rem;
+    font-weight: bold;
+    margin-top: 1.5rem;
+}
+
+.list {
+    /* border: 0.1rem solid peru; */
+}
+
+.list ul {
+    display: flex;
+    padding-top: 1.6rem;
+    float: right;
+    font-weight: bold;
+    margin-right: 3rem;
+
+}
+
+.list ul li {
+    padding-left: 3rem;
+    list-style-type: none;
+}
+
+.list a{
+    text-decoration: none;
+    padding-bottom: 0.5rem;
+    color: #08808E ;
+    font-size: 1.5rem;
+}
+
+.list a:hover {
+    border-bottom: 0.2rem solid #568258;
+    color: #08808E ;
+    /* transition: 0.5s; */
+    animation: kedip 0.5s infinite;
+
+}
+
+.active {
+    border-bottom: 0.2rem solid #568258;
+}
+
+/* .list a:active {
+    border-bottom: 0.2rem solid red;
+} */
+
+#container-name #azis {
+    font-family: 'Poppins-semibold';
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: #2C4975;
+}
+
+#web-dev {
+    font-weight: bold;
+    font-family: 'Poppins';
+    font-size: 1.5rem;
+    color: gray;
+}
+
+#kotak {
+    padding: 0.1rem 0.1rem;
+    background-color: #2C4975;
+    border-radius: 1.5rem;
+        /* animation: bg 5s infinite; */
+}
+
+#border-top {
+    border-bottom: 0.2rem solid #2C4975;
+    animation: kedip 0.5s infinite;
+}
+
+@keyframes kedip {
+    0% { opacity: 1; }
+	 49% { opacity: 1; }
+	 50% { opacity: 0.5; }
+	 99% { opacity: 0.5; }
+	 100% { opacity: 1; } 
+}
+
+@keyframes bg {
+    20% {
+        background-color: #0C8C95;
+    }
+    40% {
+        background-color: transparent;
+    }
+    60% {
+        background-color: #0C8C95;
+    }
+    100% {
+        background-color: transparent;
+    }
+}
+
+/* main */
+main {
+    display: flex;
+    /* background-color: red; */
+    height: 140vh;
+    justify-content: center;
+}
+
+.layer1 {
+    flex-basis: 40%;
+    background-color: #e6dace;
+}
+
+.layer2 {
+    flex-basis: 60%;
+    background-color: white;
+}
+
+.main-profil {
+    width: 55%;
+    display: flex;
+    position: absolute;
+    z-index: 10;
+    top: 25rem;
+    /* border: 1px solid red; */
+}
+
+.main-layer1 {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: #33363B ; */
+    background-color: #E7E7E7;
+    text-align: center;
+    box-shadow: -0.8rem 0.8rem 3.5rem -1.9rem #454545  ;
+
+}
+
+.main-layer2 {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-layer1 img {
+    width: 60%;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.main-layer2 h1 {
+    padding: 1rem 2rem;
+    padding-top: 2rem;
+    font-size: 9em;
+    font-weight: bold;
+    font-family: 'Arial', 'Helvetica', 'sans-serif';
+    color: #8f8f8f;
+
+}
+
+.main-layer2 h3 {
+    padding: 0rem 2rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.main-layer2 p {
+    padding: 0.3rem 2rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    font-family: 'Quicksand';
+    color: #bdbdbd;
+}
+
+#role {
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    /* font-weight: bolder; */
+} 
+
+.cover-role {
+    /* border: 1px solid red; */
+    letter-spacing: 0.5rem;
+    margin-bottom: 2.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    padding: 3rem 2rem;
+    margin-bottom: 4.5rem;
+    display: flex;
+    /* border: 1px solid red; */
+}
+
+.button button {
+    padding: 0.8rem 2rem;
+    border-radius: 1.5rem;
+    outline: none;
+    background-color: #A7C957;
+    border: 0.1rem solid #A7C957;
+    cursor: pointer;
+    color: ghostwhite;
+    transition: 0.5s;
+
+}
+
+.button button:nth-child(1) {
+    margin-right: 0.8rem;
+}
+
+.button button:nth-child(2) {
+    margin-left: 0.8rem;
+}
+
+.button button:hover {
+    background-color: white;
+    color: #A7C957 ;
+}
+
+.cover-role span {
+    width: 50%;
+    padding: 2rem 0;
+    font-style: italic;
+    border-top: 0.1rem solid #6A994E  ;
+}
+
+.information {
+    padding: 0 2rem;
+}
+
+.information span {
+    text-align: left;
+    font-family: 'Quicksand';
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+#main-nama {
+    padding: 2rem 0;
+    font-weight: bold;
+    font-size: 2rem;
+    font-family: 'Quicksand';
+    font-weight: bolder;
+    color: #6C9A8B ;
+    /* background-color: transparent; */
+}
+
+.social {
+    padding: 0.5rem 0;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+}
+
+.cover-social {
+    flex-basis: 40%;
+    display: flex;
+    justify-content: center;
+    padding: 1.6rem;
+}
+
+.cover-social i {
+    margin: 0.5rem;
+     font-size: 2rem;
+    color: darkblue
+}
+
+i:hover {
+    color: #6C9A8B;
+    transition: 0.5s;
+}
+
+
+
+.social img {
+    font-size: 1.6rem;
+    margin: 0 0.2rem;
+    /* border: 1px solid red; */
+}
+
+
+
+
+/* Footer */
+footer {
+    width: 100%;
+    /* background-color: red; */
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    padding: 3rem;
+    font-size: 1.2rem;
+}
+
+.footer1, .footer2 {
+    flex-basis: 50%;
+}
+
+.footer2 div {
+    float: right;
+    margin-right: 2rem;
+}
+
+.footer2 h3 {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.cover-social-bottom i {
+    font-size: 1.5rem;
+    color: darkblue;
+    padding: 0 0.2rem;
+    text-align: center;
+
+}
+
+.main2 {
+    height: 450vh;
+    width: 100%;
+    background-color: #e6dace;
+    position: absolute;
+    z-index: 15;
+    top: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.cover-main2 {
+    width: 60%;
+    padding: 15rem 6rem;
+    /* background-color: red; */
+}
+
+.experience {
+    margin-top: 2.5rem;
+    background-color: white;
+    padding: 5rem 2.5rem;
+    font-size: 1rem;
+}
+
+.experience h2 {
+    font-family: 'Quicksand';
+    font-weight: bold;
+    color: lightseagreen;
+}
+
+.dalem {
+    display: flex;
+}
+
+.dalem1 , .dalem2 {
+    flex-basis: 50%;
+}
+
+.dalem2 {
+    font-size: 1rem;
+    color: black;
+    font-weight: bold;
+    /* padding-top: 2rem; */
+}
+
+.descriptions {
+    margin-top: 5rem;
+}
+
+.details {
+    /* padding-top: 7rem ; */
+    margin-top: 5rem;
+    padding-bottom: 0.2rem;
+    float: right;
+}
+
+.details:hover {
+    border-bottom: 1px solid dodgerblue;
+}
+.details a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.bold {
+    color: blueviolet;
+}
+
+.tahun {
+    margin-bottom: 2.5rem;
+    color: dodgerblue;
+}
+
+/* effect slide  */ 
+.slide {
+    left: -200rem;
+    transition: 1s;
+    animation: ease;
+    /* animation: slide 1s ease; */
+}
+
+.slide-out {
+    left: 0rem;
+    transition: 1s;
+    animation: ease;
+}
+
+.judul-main {
+    color: darkblue;
+}
+
+/* @keyframes slide {
+    from {
+      left:-110rem;
+    }
+    to {
+        left: 0;
+    }
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+

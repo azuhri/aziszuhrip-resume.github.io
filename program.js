@@ -105,4 +105,89 @@
 //         alert('Terimkasih sudah berkunjung')
 // }
 
+//function rekursif
+// function angkot(a){
+//     if(a >= 100) {
+//         return;
+//     }
+
+//     console.log('banyak angkot : '+ a)
+//     return angkot(a+1)
+
+// }
+
+// angkot(10);
+
+
 // belajar Array 
+// var alatTulis = ['Buku','Pensil','Penghapus','Penggaris']
+// var jumlahAtk = alatTulis.length;
+// console.log(jumlahAtk);
+
+// var alatTulisUtama = alatTulis[1]
+// console.log(alatTulisUtama);
+
+// pertama = prompt('Kamu sedang apa ?');
+// kedua = prompt('Lalu nanti ngapain?');
+// ketiga = prompt('Terus ngapain?');
+
+
+// var toDoList = [pertama, kedua, ketiga];
+
+// console.log(toDoList[0])
+// console.log(toDoList[1])
+// console.log(toDoList[2])
+
+// var myArray = ['1',['nama','umur'],'cita-cita']
+// console(myArray[2][0]);
+
+// var myArray = ['nama','usia','profesi',['adek','kakak'] ];
+// console.log(myArray[3][0]);
+
+//manipulasi array 
+var namaSiswa = ['azis','indah','bagas']
+var data = true
+var valueAwal = 0;
+// while(data === true) {
+//     namaSiswa.push(prompt('Masukan data siswa'));
+//     data = confirm('Mau tambah lagi ?');
+// }
+
+// for( var i = 0; i <= namaSiswa.length; i++) {
+//     console.log('Mahasiswa ' + (i+1) + ':' + namaSiswa[i])
+// }
+
+// var siswa8 = namaSiswa[8];
+// console.log(siswa8);
+
+// while(valueAwal <= namaSiswa.length) {
+//     console.log(namaSiswa[valueAwal]);
+// valueAwal++
+// }
+
+// var cetak = function(e) {
+//   console.log(e)
+// }
+
+// namaSiswa.forEach(cetak);
+
+//filter pada array 
+// var angka = [1,2,3,4,5,6,7,8,9,88,66,89,12,45,56,67]
+// var angka2 = angka.filter(function(x) {
+//     return x %2 == 0
+// })
+
+// console.log(angka2.join('\n'));
+
+var nilaiAwal = true;
+while(nilaiAwal == true){
+    var nama = prompt('Siapakah perempuan tercantik di dunia ?').toLowerCase();
+    if(nama == 'ajeng'){
+        alert('SALAH!!! AJENG JELEK')
+    } else if ( nama == 'ibu' || nama == 'mamah' || nama == 'mama' || nama == 'bunda'){
+        alert('TEPAT! SEKALI!!!!!! MEREKA WANITA TERCANTIK DIDUNIA :)')
+    } else {
+        alert("LUMAYAN CAKEP :')")
+    }
+    nilaiAwal = confirm('Mau coba lagi ?')
+}

@@ -1,0 +1,160 @@
+/* fonts */
+    /* montserat */
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+    /* Poopins */
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+    /* Quicksand */
+    @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', 'Quicksan', 'arial';
+}
+
+.body {
+  font-family: 'Poppins', 'Quicksan', 'arial';
+}
+
+html {
+  font-size: 62.5%;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.coverHeader {
+     width: 90%;
+    display: flex;
+    padding-top: 15rem;
+    padding-bottom: 5rem;
+}
+
+.photo {
+  flex-basis: 25%;
+  display: flex;
+  justify-content: center;
+}
+
+.profile {
+  flex-basis: 75%;
+  display: flex;
+  align-items: center;
+  padding-left: 10rem;
+}
+
+.photo img {
+  width: 90%;
+  border-radius: 100%;
+
+}
+
+.roleContact {
+  display: flex;
+}
+.nama h2 {
+  font-size: 4rem;
+  margin-bottom: -30px;
+  font-family: 'Quicksand';
+  font-weight: bold;
+  color:#8e8e8e
+}
+.nama h1 {
+  font-size: 7.5rem;
+  color: #FEA837;
+}
+
+.roleContact p {
+  font-size: 1.9rem;
+  font-family: 'Quicksand';
+  font-weight: bold;
+  color: #c7c7c7
+}
+
+
+.sosmed {
+  position: relative;
+  z-index: 10;
+  left: 300px;
+  top: 3px;
+}
+
+.sosmed i {
+  color: gray;
+  padding: 0 1rem;
+  font-size: 2rem;
+}
+
+.sosmed i:hover {
+  color: #FEA837;;
+}
+
+.data {
+  display: flex;
+  width: 75%;
+  float: right;
+}
+
+.data div {
+  padding-left: 10rem;
+}
+
+.data span {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #9a9a9a;
+}
+
+.data p {
+  font-weight: bold;
+  color: #484848;;
+}
+
+.bDetails {
+  width: 15%;
+  position: absolute;
+  top: 387px;
+  left: 99px;
+}
+
+.bDetails button {
+  width: 100%;
+  padding: 2rem;
+  padding: 10px;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  font-size: 1.5rem;
+  font-family: 'quicksand';
+  color: white;
+  background-color: #2992d0;
+  outline: none;
+}
+
+.bDetails button:hover {
+  color: white;
+  background-color: #FEA837;
+  transition: 0.5s;
+}
+
